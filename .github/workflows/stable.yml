@@ -1,6 +1,6 @@
 name: testing stable version
 
-on: [push]
+on: [push] 
 
 jobs:
   default-user-name-password:
@@ -153,7 +153,7 @@ jobs:
           -e PUBLIC_KEY="${{ env.PUBLIC_KEY }}" \
           -e SUDO_ACCESS=false \
           -e PASSWORD_ACCESS=true  \
-          -e USER_PASSWORD=password  \
+          -e USER_PASSWORD=passwor  \
           -e USER_NAME=linuxserver.io \
           --restart unless-stopped \
           lscr.io/linuxserver/openssh-server:latest
